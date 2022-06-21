@@ -3,7 +3,7 @@ import { Doctor } from '../Entities/doctor.entity';
 import { DoctorBaseService } from '../Services/doctor.base.service';
 
 export abstract class DoctorBaseController {
-  constructor(private doctorBaseService: DoctorBaseService) {}
+  constructor(protected doctorBaseService: DoctorBaseService) {}
 
   abstract getService(): DoctorBaseService;
 
